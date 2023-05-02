@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/p5.play.js"></script>
+
+  <script src="js/form.js"></script>
+<!--Link game.js and player.js-->
+  <script src="js/player.js"></script>
+  <script src="js/game.js"></script>
+
+<!--Add database config here below-->
+ <!-- firebase start -->
+ <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+ <script>
+   // Your Firebase configuration - the part u need to change
+   const firebaseConfig = {
+  apiKey: "AIzaSyC4vPCE26z959TUc1_XoFLD86_Auwg1WHk",
+  authDomain: "project-40-531a5.firebaseapp.com",
+  databaseURL: "https://project-40-531a5-default-rtdb.firebaseio.com",
+  projectId: "project-40-531a5",
+  storageBucket: "project-40-531a5.appspot.com",
+  messagingSenderId: "393659751966",
+  appId: "1:393659751966:web:a6d11ba557a767dd35180f"
+};
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+ </script>
+<!-- firebase end  -->
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script src="sketch.js"></script>
+
+</body></html>
